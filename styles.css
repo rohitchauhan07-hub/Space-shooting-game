@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #000000 0%, #0a0a0a 100%);
+  font-family: 'Orbitron', sans-serif;
+  color: #0ff;
+}
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #00151c 0%, #000000 100%);
+  box-shadow: 0 0 30px #0ff;
+  border-radius: 10px;
+}
+#score {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  text-shadow: 0 0 10px #0ff;
+  user-select: none;
+}
+#gameOverScreen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0ff;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0 0 20px #0ff;
+  user-select: none;
+  display: none;
+}
+#gameOverScreen button {
+  margin-top: 20px;
+  background: #0ff;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#gameOverScreen button:hover {
+  background: #00cccc;
+}
